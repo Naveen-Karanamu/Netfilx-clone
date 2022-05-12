@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 // components
-import Navbar from '../componets/Navbar/Navbar.compoent'
+import Navbar from '../components/Navbar/Navbar.component'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
     </div>
+    
   )
 }
 
