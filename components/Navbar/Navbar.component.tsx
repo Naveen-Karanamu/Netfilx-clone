@@ -38,11 +38,11 @@ const Navbar = () => {
           </div>
           <div className="md:hidden">Browse</div>
           <div className="hidden gap-4 md:flex">
-            <span className="text-sm">Home</span>
-            <span className="text-sm text-gray-400">TV Shows</span>
-            <span className="text-sm text-gray-400">Movies</span>
-            <span className="text-sm text-gray-400">New & Popular</span>
-            <span className="text-sm text-gray-400">My List</span>
+            <span className="text-sm hover:text-gray-400">Home</span>
+            <span className="text-sm text-gray-400 hover:text-white">TV Shows</span>
+            <span className="text-sm text-gray-400 hover:text-white">Movies</span>
+            <span className="text-sm text-gray-400 hover:text-white">New & Popular</span>
+            <span className="text-sm text-gray-400 hover:text-white">My List</span>
           </div>
         </div>
         <div className="flex items-center gap-4">
