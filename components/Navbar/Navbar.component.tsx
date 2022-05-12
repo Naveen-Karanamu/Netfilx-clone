@@ -31,6 +31,7 @@ const Navbar = () => {
           <div className='hidden md:block'>
             <IoSearch className='h-6 w-6 text-white'/>
           </div>
+          <div className='hidden lg:block text-gray-300 text-sm'>Kids</div>
           <div>
             <FaBell className="h-5 w-5 text-white" />
           </div>
