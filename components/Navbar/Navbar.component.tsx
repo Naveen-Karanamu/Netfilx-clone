@@ -1,9 +1,15 @@
+// Livraries
+import Link from 'next/link'
+
+// Icons
+import { FaBell } from 'react-icons/fa'
+
 const Navbar = () => {
   return (
     <>
-      <div className="flex h-10 w-full">
-        <div className="flex items-center gap-2 ">
-          <div className="w-auto h-7">
+      <div className="flex h-10 w-full items-center justify-between">
+        <div className="flex items-center gap-4 ">
+          <div className="h-7 w-auto">
             <img
               src="https://rb.gy/ulxxee"
               width={100}
@@ -13,7 +19,20 @@ const Navbar = () => {
           </div>
           <div>Browse</div>
         </div>
-        <div className="flex"></div>
+        <div className="flex items-center gap-5">
+          <div>
+            <FaBell className='text-white w-5 h-5'/>
+          </div>
+          <div>
+            <Link href="/account">
+              <img
+                src="https://rb.gy/g1pwyx"
+                alt=""
+                className="cursor-pointer rounded"
+              />
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   )
