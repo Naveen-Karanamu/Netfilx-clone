@@ -8,7 +8,7 @@ interface Props {
 const Template = ({ movies }: Props) => {
   return (
     <>
-      <div className="relative duration-300 ease-out md:hover:scale-105">
+      <div className="relative duration-300 lg:ease-out lg:hover:scale-105">
         <div className="transision relative h-28 min-w-[180px] md:h-32 md:min-w-[240px] ">
           <Image
             src={`https://image.tmdb.org/t/p/w500${
