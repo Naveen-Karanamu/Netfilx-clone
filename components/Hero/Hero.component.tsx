@@ -42,11 +42,11 @@ const Hero = ({ netflixOriginals }: Props) => {
             <p>{newMovie?.overview}</p>
           </div>
           <div className='py-2 md:py-4 flex gap-3'>
-            <button className='flex items-center gap-2 bg-white text-black px-5 py-1 rounded md:rounded-md md:px-7 md:py-2 md:text-2xl'>
+            <button className='flex items-center gap-2 bg-white text-black px-5 py-1 rounded md:rounded-md md:px-7 md:py-2 md:text-2xl hover:opacity-70'>
               <FaPlay />
               <span className='font-medium'>Play</span>
             </button>
-            <button className='flex items-center gap-2 bg-black opacity-50 text-white px-5 py-1 rounded md:rounded-md md:px-7 md:py-2 md:text-2xl'>
+            <button className='flex items-center gap-2 bg-black opacity-50 text-white px-5 py-1 rounded md:rounded-md md:px-7 md:py-2 md:text-2xl hover:opacity-70'>
               <BsInfoCircle />
               <span className='font-medium'>More Info</span>
             </button>
