@@ -30,11 +30,11 @@ const Hero = ({ netflixOriginals }: Props) => {
             objectFit="cover"
           />
         </div>
-        <div className="px-4 pt-20">
-          <div className='text-2xl font-bold'>
+        <div className="px-4 pt-20 md:pt-24 md:px-6">
+          <div className='text-2xl font-bold md:text-4xl'>
             <h1>{newMovie?.title || newMovie?.original_name}</h1>
           </div>
-          <div className='pt-2'>
+          <div className='pt-2 md:pt-3 md:text-lg'>
             <p>{newMovie?.overview}</p>
           </div>
         </div>
