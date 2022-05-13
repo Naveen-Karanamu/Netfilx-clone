@@ -18,6 +18,7 @@ const Template = ({ movies }: Props) => {
             layout="fill"
           />
         </div>
+          <p className='pt-1'>{movies.original_name||movies.title}</p>
       </div>
     </>
   )
