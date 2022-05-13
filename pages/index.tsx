@@ -4,10 +4,9 @@ import Image from 'next/image'
 // components
 import Navbar from '../components/Navbar/Navbar.component'
 import requests from '../utils/requests'
-import {Movie} from '../typings'
+import { Movie } from '../typings'
 import Hero from '../components/Hero/Hero.component'
 import Slider from '../components/Slider/Slider.component'
-
 
 interface Props {
   netflixOriginals: Movie[]
@@ -20,14 +19,16 @@ interface Props {
   documentaries: Movie[]
 }
 
-const Home = ({netflixOriginals,
+const Home = ({
+  netflixOriginals,
   actionMovies,
   comedyMovies,
   documentaries,
   horrorMovies,
   romanceMovies,
   topRated,
-  trendingNow,}:Props) => {
+  trendingNow,
+}: Props) => {
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
       <Head>
@@ -35,18 +36,19 @@ const Home = ({netflixOriginals,
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Hero netflixOriginals={netflixOriginals}/>
-      <div className='flex flex-col gap-8 pl-3 md:pl-4 lg:pl-16 pt-14 md:pt-16 lg:pt-32'>
-        <Slider title="Trending Now" movies={trendingNow}/>
-        <Slider title="Top Rated" movies={topRated}/>
-        <Slider title="Action Movies" movies={actionMovies}/>
-        <Slider title="Horror Movies" movies={horrorMovies}/>
-        <Slider title="Romance Movies" movies={romanceMovies}/>
-        <Slider title="Comedy Movies" movies={comedyMovies}/>
-        <Slider title="Documentaries" movies={documentaries}/>
+      <Hero netflixOriginals={netflixOriginals} />
+      <div className='h-[100%vw] relative'>
+        <div className="flex flex-col gap-8 pl-3 pt-14 md:pl-4 md:pt-16 lg:pl-16 lg:pt-32">
+          <Slider title="Trending Now" movies={trendingNow} />
+          <Slider title="Top Rated" movies={topRated} />
+          <Slider title="Action Movies" movies={actionMovies} />
+          <Slider title="Horror Movies" movies={horrorMovies} />
+          <Slider title="Romance Movies" movies={romanceMovies} />
+          <Slider title="Comedy Movies" movies={comedyMovies} />
+          <Slider title="Documentaries" movies={documentaries} />
+        </div>
       </div>
     </div>
-    
   )
 }
 
@@ -89,7 +91,7 @@ export const getServerSideProps = async () => {
       comedyMovies: comedyMovies.results,
       horrorMovies: horrorMovies.results,
       romanceMovies: romanceMovies.results,
-      documentaries: documentaries.results
+      documentaries: documentaries.results,
       // products,
     },
   }
