@@ -4,8 +4,29 @@ import Image from 'next/image'
 // components
 import Navbar from '../components/Navbar/Navbar.component'
 import requests from '../utils/requests'
+import {Movie} from '../typings'
+import Hero from '../components/Hero/Hero.component'
 
-const Home = ({netflixOriginals}) => {
+
+interface Props {
+  netflixOriginals: Movie[]
+  trendingNow: Movie[]
+  topRated: Movie[]
+  actionMovies: Movie[]
+  comedyMovies: Movie[]
+  horrorMovies: Movie[]
+  romanceMovies: Movie[]
+  documentaries: Movie[]
+}
+
+const Home = ({netflixOriginals,
+  actionMovies,
+  comedyMovies,
+  documentaries,
+  horrorMovies,
+  romanceMovies,
+  topRated,
+  trendingNow,}:Props) => {
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
       <Head>
@@ -13,6 +34,7 @@ const Home = ({netflixOriginals}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Hero netflixOriginals={netflixOriginals}/>
     </div>
     
   )

@@ -23,7 +23,7 @@ const Navbar = () => {
       <div
         className={
           isScrolled
-            ? 'fixed top-0 z-50 flex h-10 w-full items-center justify-between bg-[#141414] px-4 py-4 md:px-6 md:py-5 lg:px-10'
+            ? 'fixed top-0 z-50 flex h-10 w-full items-center justify-between bg-[#141414] px-4 py-4 md:px-6 md:py-5 lg:px-10 lg:py-10'
             : 'fixed top-0 z-50 flex h-10 w-full items-center justify-between px-4 py-8 md:px-6 lg:px-10 lg:py-10'
         }
       >
