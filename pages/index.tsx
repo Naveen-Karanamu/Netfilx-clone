@@ -36,14 +36,14 @@ const Home = ({netflixOriginals,
       </Head>
       <Navbar />
       <Hero netflixOriginals={netflixOriginals}/>
-      <div className='flex flex-col gap-4 px-3 md:px-8 lg:px-16 pt-14 md:pt-16 lg:pt-32'>
-        <Slider title="Trending Now" movie={trendingNow}/>
-        <Slider title="Top Rated" movie={topRated}/>
-        <Slider title="Action Movies" movie={actionMovies}/>
-        <Slider title="Comedy Movies" movie={comedyMovies}/>
-        <Slider title="Horror Movies" movie={horrorMovies}/>
-        <Slider title="Romance Movies" movie={romanceMovies}/>
-        <Slider title="Documentaries" movie={documentaries}/>
+      <div className='flex flex-col gap-4 pl-3 md:pl-4 lg:pl-16 pt-14 md:pt-16 lg:pt-32'>
+        <Slider title="Trending Now" movies={trendingNow}/>
+        <Slider title="Top Rated" movies={topRated}/>
+        <Slider title="Action Movies" movies={actionMovies}/>
+        <Slider title="Horror Movies" movies={horrorMovies}/>
+        <Slider title="Romance Movies" movies={romanceMovies}/>
+        <Slider title="Comedy Movies" movies={comedyMovies}/>
+        <Slider title="Documentaries" movies={documentaries}/>
       </div>
     </div>
     
