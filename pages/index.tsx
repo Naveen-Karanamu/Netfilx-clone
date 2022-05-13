@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar/Navbar.component'
 import requests from '../utils/requests'
 import {Movie} from '../typings'
 import Hero from '../components/Hero/Hero.component'
+import Slider from '../components/Slider/Slider.component'
 
 
 interface Props {
@@ -35,6 +36,15 @@ const Home = ({netflixOriginals,
       </Head>
       <Navbar />
       <Hero netflixOriginals={netflixOriginals}/>
+      <div className='flex flex-col gap-4 px-3 md:px-8 lg:px-16 pt-14 md:pt-16 lg:pt-32'>
+        <Slider title="Trending Now" movie={trendingNow}/>
+        <Slider title="Top Rated" movie={topRated}/>
+        <Slider title="Action Movies" movie={actionMovies}/>
+        <Slider title="Comedy Movies" movie={comedyMovies}/>
+        <Slider title="Horror Movies" movie={horrorMovies}/>
+        <Slider title="Romance Movies" movie={romanceMovies}/>
+        <Slider title="Documentaries" movie={documentaries}/>
+      </div>
     </div>
     
   )
