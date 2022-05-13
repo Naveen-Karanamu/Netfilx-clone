@@ -36,7 +36,7 @@ const Home = ({netflixOriginals,
       </Head>
       <Navbar />
       <Hero netflixOriginals={netflixOriginals}/>
-      <div className='flex flex-col gap-4 pl-3 md:pl-4 lg:pl-16 pt-14 md:pt-16 lg:pt-32'>
+      <div className='flex flex-col gap-8 pl-3 md:pl-4 lg:pl-16 pt-14 md:pt-16 lg:pt-32'>
         <Slider title="Trending Now" movies={trendingNow}/>
         <Slider title="Top Rated" movies={topRated}/>
         <Slider title="Action Movies" movies={actionMovies}/>
