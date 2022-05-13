@@ -38,7 +38,7 @@ const Hero = ({ netflixOriginals }: Props) => {
           <div className="text-2xl font-bold md:text-4xl lg:text-6xl ">
             <h1>{newMovie?.title || newMovie?.original_name}</h1>
           </div>
-          <div className="pt-2 md:max-w-md md:pt-3 text-sm md:text-lg lg:max-w-xl lg:pt-4 lg:text-2xl text-shadow-xl">
+          <div className="pt-2 md:max-w-md md:pt-3 text-sm md:text-lg lg:max-w-xl lg:pt-4 lg:text-xl text-shadow-xl">
             <p>{newMovie?.overview}</p>
           </div>
           <div className='py-2 md:py-4 flex gap-3'>
