@@ -18,7 +18,7 @@ const Template = ({ movies }: Props) => {
             layout="fill"
           />
         </div>
-          <p className='pt-1'>{movies.original_name||movies.title}</p>
+          <p className='pt-1 truncate max-w-[240px]'>{movies.title||movies.original_name}</p>
       </div>
     </>
   )
